@@ -21,6 +21,10 @@ spring:
               uri: lb://PELANGGAN
               predicates:
                 - Path=/api/pelanggan/**
+            - id: AUTH
+              uri: lb://AUTH
+              predicates:
+                - Path=/api/auth/**
 
 eureka:
   client:
